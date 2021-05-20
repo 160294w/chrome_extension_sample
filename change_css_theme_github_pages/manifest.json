@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "GihubPagesの色をオレンジ色にする",
+    "version": "1.0.0",
+    "description": "hello world",
+    "permissions": [ // アクティブたびに対して権限を取得
+	"activeTab"
+    ],
+    "content_scripts": [{
+	"matches": ["https://160294w.github.io/to_save_button_event_for_localstorage/*"],
+	"js": [
+	    "content.js"
+	]
+    }]
+}
